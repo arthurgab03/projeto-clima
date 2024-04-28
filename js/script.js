@@ -1,8 +1,5 @@
-import config from '../config.js'
 
-
-
-const apiKey = config.token;
+const apiKey = window.config.token;
 const apiCountryURL = "https://flagsapi.com/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 const cityInput = document.getElementById("city-input");
