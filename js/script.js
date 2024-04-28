@@ -1,4 +1,4 @@
-const apiKey = "7ec1647082b6f284d0637920696c690e";
+const apiKey = process.env.API_KEY;
 const apiCountryURL = "https://flagsapi.com/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 
