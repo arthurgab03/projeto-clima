@@ -1,12 +1,12 @@
-const apiKey = process.env.API_KEY;
+import config from '../config.js'
+
+
+
+const apiKey = config.token;
 const apiCountryURL = "https://flagsapi.com/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
-
 const cityInput = document.getElementById("city-input");
 const searchButton = document.getElementById("search");
-const nameInput = document.getElementById("user-name");
-const surnameInput = document.getElementById("user-surname");
-const comment = document.getElementById("comment");
 const errorMessage = document.querySelector(".error-container")
 
 // Elementos 
@@ -58,19 +58,14 @@ const showWeatherData = async (city) => {
     windElement.innerText = `${data.wind.speed}km/h`;
     weatherContainer.classList.remove("hide");
     errorMessage.classList.add("hide")
-    const userName = nameInput.value;
-    const userSurName = surnameInput.value;
-    comment.innerText = `${userName} ${userSurName}, aqui estão as informações:`;
+    
 
     document.body.style.backgroundImage = `url("${apiUnsplash + city}")`;
     
     
    
 
-    if(userName === "" || userSurName === ""){
-        comment.innerText = `Aqui estão as informações:`
-    } 
-
+    
     
 
     
@@ -94,6 +89,5 @@ cityInput.addEventListener("keyup", (e)=>{
         showWeatherData(city);
     }
 })
-
 
 
