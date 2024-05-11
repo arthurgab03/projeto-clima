@@ -1,5 +1,5 @@
 
-const apiKey = window.config.token;
+const apiKey = "";
 const apiCountryURL = "https://flagsapi.com/";
 const apiUnsplash = "https://source.unsplash.com/1600x900/?";
 const cityInput = document.getElementById("city-input");
@@ -86,5 +86,7 @@ cityInput.addEventListener("keyup", (e)=>{
         showWeatherData(city);
     }
 })
+
+
 
 
