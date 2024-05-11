@@ -1,4 +1,4 @@
-# Projeto de Previsão do Tempo
+# Projeto de informações sobre clima de cidades
 
 Este projeto é uma aplicação web desenvolvida com HTML, CSS e JavaScript que permite aos usuários pesquisar o clima de uma cidade específica. O projeto utiliza a API Current Weather Data da [OpenWeather](https://openweathermap.org/) para fornecer informações atualizadas sobre o clima de qualquer lugar do mundo, utiliza a API [FlagsAPI](https://flagsapi.com/) para os símbolos de bandeira dos países e utiliza a API [Unsplash](https://unsplash.com/pt-br) para gerar imagens personalizadas de background de acordo com a cidade que o usuário digitou.
 
